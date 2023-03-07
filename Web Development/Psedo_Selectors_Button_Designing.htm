@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Psedo selectiors & designing</title>
+    
+    <style>
+       .container {
+           border: 2px solid brown;
+           background-color: #b5ef7a;
+           padding: 14px;
+           margin: 14px;
+       }
+
+       a{
+           /* for removing under-line */
+            text-decoration: none;   
+            color: black;
+       }
+
+       a:hover{     
+           /* When we move oncursor */
+           color: aqua;
+           background-color: cadetblue;
+       }
+
+       a:visited{
+            color:rgb(156, 14, 161);
+       }
+
+       a:active{
+           background-color: rgb(10, 15, 1);
+       }
+
+       .btn {
+           background-color: burlywood;
+           padding: 6px;
+           margin: 6px;
+           border: none;
+           cursor: pointer;
+           font-size: 16px;
+           border-radius: 4px;
+       }
+
+       button:hover{
+            background-color: darkseagreen;
+       }
+
+       .btn:hover{
+           border: 2px solid black;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3 style="color:rgb(230, 138, 26);" >This is my heading </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt suscipit, nam vel quo aliquid sapiente a
+            consequuntur ipsam officiis laudantium vitae consequatur veritatis, dolores explicabo accusamus nostrum
+            commodi corrupti esse voluptatum corporis! Nulla, nobis!
+        </p>
+        <a href="img/home.jpg" target="_blank" class="btn"> Read More</a>
+        <button class="btn"> Contact Us </button>
+    </div>
+</body>
+
+</html>

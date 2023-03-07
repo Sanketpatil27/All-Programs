@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+
+<style>
+
+    :root{
+        /* global var */
+        --color: yellow;
+        --maxh: 400px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        /* background-color: var(--clr-collor);  cant use coz var is not in this or parent block */
+        background-color: var(--color);  
+    }
+    
+    .box{
+        /* local var */
+        --clr-collor: orange;
+        border: 2px solid black;
+        background-color: var(--color);
+        background-color: var(--clr-collor);
+        width: 300px;
+        height: 200px;
+        height: var(--maxh);
+        margin: 4px;
+        box-shadow: 3px 4px rgb(25, 116, 116);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box"> </div>
+        <div class="box"> </div>
+        <div class="box"> </div>
+    </div>
+</body>
+
+</html>

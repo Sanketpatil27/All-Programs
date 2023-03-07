@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Median Queries in Grid </title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: .3rem;
+            grid-template-areas:
+                'nav nav nav nav'
+                'sec sec aside aside'
+                'ft ft ft ft'
+            ;
+        }
+
+        .item {
+            background-color: rgb(228, 243, 13);
+            border: 2px solid coral;
+            padding: 2px 7px;
+        }
+
+        nav {
+            text-align: center;
+            grid-area: nav;
+        }
+
+        section {
+            text-align: center;
+            grid-area: sec;
+        }
+
+        aside {
+            text-align: center;
+            grid-area: aside;
+        }
+
+        footer {
+            text-align: center;
+            grid-area: ft;
+        }
+
+        @media (max-width: 500px) and (min-width: 300px) {
+            body {
+                background-color: cadetblue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'sec sec sec sec'
+                    'aside aside aside aside'
+                    'ft ft ft ft'
+                ;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px){
+            body{
+                background-color: wheat;
+            }
+        }
+
+        @media (min-width:800px) and (max-width:1100px){
+            body{
+                background-color: rgb(255, 166, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsa.
+        </nav>
+
+        <section class="item">
+            <h2 class="hd"> Section </h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quidem corrupti fuga? Quisquam animi
+            pariatur nam iusto
+            perspicjasdhfkahajkhajkhhdajdjfhhsdjhfkjdsjfhsjkfsdjfkhjdkhfasdjkhfajkhahjdkfhajkhfjncsdjnfsdjkfh djhfash l
+            as k df fashfh kljhka h hfahh iatis sit mtatibus beatae cumque quod laboriosam laudantium eius hic, ad
+            deleniti, ab iure veniam quisquam totam
+            dolore ration omnis possimus, nam siminus facere voluptatem, fuga ullam natus culpa, dignissimos tenetur
+            provident dolorum sunt? Tempore, cum quaerat! Unde itaque doloremque, neque debitis quidem, soluta iure
+            perspiciatis exercitationem iusto mollitia minima fuga tenetur saepe dolorum labore dicta dolor fugit sint?
+        </section>
+
+        <aside class="item">
+            <h2 class="hd"> Aside </h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis debitis voluptatem
+            necessiilique modi! Veritatis architecto
+            deleniti ab!
+        </aside>
+
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio quis
+            molestiae.sdjkfsd;kvn
+        </footer>
+    </div>
+</body>
+
+</html>

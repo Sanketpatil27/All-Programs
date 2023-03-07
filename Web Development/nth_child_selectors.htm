@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes and nth child pseudo selectors </title>
+    <style>
+        div{
+            width: 300px;
+            display: block;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        a{
+            color: black;
+        }
+
+        input{
+            display: block;
+        }
+
+        input[type="text"]{
+            padding: 13px;
+            border: 2px solid red;
+        }
+
+        a[target]{
+            color: violet;
+            font-size: 44px;
+        }
+
+        /* this will aply css for 2rd child */
+        li:nth-child(2){
+            color: white;
+        }
+        
+        /* apply for every 2nd child */
+        /* li:nth-child(2n+0){
+            color: rgb(111, 0, 255);
+        } */
+        
+        /* apply for every odd or evn child */
+        li:nth-child(odd){
+            color: rgb(111, 0, 255);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> <a href="http://google.com" target="_blank"> go to google </a> </h1>
+        <h1> <a href="http://facebook.com" target="_self"> go to facebook </a> </h1>
+        
+        <form action="" class="formcontrol" >
+            <input type="text">
+            <input type="password">
+            <input type="email">
+        </form>
+        <ul>
+            <li class="item" id="item1">first </li>
+            <li class="item" id="item2">second</li>
+            <li class="item" id="item3">third </li>
+            <li class="item" id="item4">fourth</li>
+            <li class="item" id="item5">fifth</li>
+            <li class="item" id="item6">sixth</li>
+            <li class="item" id="item6">seven</li>
+            <li class="item" id="item6">eigth</li>
+            <li class="item" id="item6">nine</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid </title>
+    <style>
+        .container{
+            display: grid;
+            /* three colms */
+            /* grid-template-columns: 300px 100px 100px; */
+            /* grid-template-columns: 300px  auto 100px; */
+            /* grid-template-columns: 1fr 4fr 1fr;   divided into number of fractions of 1st part*/   
+
+            /* divide into num of colms and width */
+            grid-template-columns: repeat(3, auto);
+
+            /* Sets the gap betn items */
+            grid-gap: 2rem;
+        }
+
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            background-color: aquamarine;
+            padding: 16px 3px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shadows </title>
+    <style>
+        body {
+            background-color: rgb(4, 2, 15);
+            /* background: linear-gradient(170deg,transperent,#2196f3); */
+        }
+
+        .container {
+            display: flex;
+            padding: 12px;
+            height: 300px;
+            /* border: 2px solid salmon; */
+            /* align-items: center; */
+        }
+
+        .items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 22px;
+            height: 200px;
+
+            background-color: salmon;
+
+            /*  offset-x  offset-y, or 3rd is blur-radius and 4th spread-radius  */
+            /* box-shadow: -6px -6px rgb(131 127 127);   (-) for shadow up, other for down   */
+            /* box-shadow: 6px 6px rgb(131 127 127);      */
+
+            /* box-shadow: -10px -8px 20px rgb(155 255 247); */
+            /* rgba for alpha color darkness */
+            /* box-shadow: 10px 8px 20px 34px rgba(134, 225, 248, 0.4)      */
+
+
+            /* box-shadow: inset 7px 7px 19px #2812aa; for shado under the - box */
+
+
+            /* for multiple shadows */
+            /* box-shadow: 10px 8px rgb(140, 221, 241), 20px 20px rgb(110, 220, 20); */
+            box-shadow: 10px 8px 20px rgba(134, 225, 248, 0.9), 20px 20px 50px rgb(110, 220, 20);
+        }
+        
+        h1 {
+            color: rgb(217, 240, 13);
+        }
+
+        p {
+            text-align: center;
+            /* overflow: auto; */
+        }
+
+        .items h1 {
+            text-shadow: 3px 4px #884c43;
+            /* text-shadow: -3px -4px 2px #884c43;  up shadow with blur-radius */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="item1">
+            <h1> Card-1 </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, quod! Sequi nemo explicabo minus,
+                architecto dicta deserunt eius et recusandae quod minima ratione vitae, ipsa totam nobis at, voluptas
+                modi accusantirupti laudantium officia illum soluta veritatis.</p>
+        </div>
+        <div class="items" id="item2">
+            <h1> Card-2 </h1>
+            <p>Lorem ipsum dolort. Repellat, quod! Sequi nemo explicabo minus, architecto dicta deserunt eius et
+                recusandae quod minima ratione vitae, ipsa totam nobis at, voluptas modi accusantium quas nam
+                perferendis? Provident inva veritatis.</p>
+        </div>
+        <div class="items" id="item3">
+            <h1> Card-3 </h1>
+            <p>Lorem ipsum dolor sit amet, consod! Sequi nemo explicabo minus, architecto dicta deserunt eius et
+                recusandae quod min voluptas modi accusantium quas nam perferendis? Provident inventore minus corrupti
+                laudantium officia illum soluta veritatis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

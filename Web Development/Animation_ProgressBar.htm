@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgressBar</title>
+
+    <style>
+        .container{
+            height: 190px;
+            width: 1000px;
+            border: 2px solid black;
+            background-color: brown;
+        }
+
+        @keyframes pr{
+            from{
+                width: 0px;
+            }
+            to{
+                width:1000px
+            }
+        }
+
+        .bar{ 
+            height: 190px;
+            background-color: aquamarine;
+            position: relative;
+            
+            /* 1st way */
+            animation: pr;
+            animation-duration: 3s;
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 0ms; */
+            animation-iteration-count: 1;
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: reverse; */
+
+            /* 2nd way */
+            /* animation: pr 6 ease-in-out 0ms 1 alternate-reverse reverse; */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bar"> </div>
+    </div>
+</body>
+
+</html>

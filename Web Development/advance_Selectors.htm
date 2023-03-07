@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance selectors </title>
+    <style>
+        h1{
+            background-color: aquamarine;
+        }
+
+        /* div p{
+            background-color: thistle;
+        } */
+
+        /* direct element after div (direct child) */
+        div > p{
+            color: brown;
+            font-weight: bold;
+        }
+
+        div + p{
+            color:rgb(0, 255, 42)
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is more one selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="one"> <p> hello </p> </li>
+            </ul>
+            <p>this is a one paragraph </p>
+        </div>
+        <p>this is another paragraph </p>
+    </div>
+    <p>this is third  paragraph</p>
+</body>
+
+</html>

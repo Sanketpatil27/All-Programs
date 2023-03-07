@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template areas </title>
+
+    <style>
+        .container{
+            display: grid;
+           
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section corner'
+            'footer footer footer footer'
+            ;
+        }
+
+        .item{
+            background-color: turquoise;
+            border: 2px solid rgb(0, 0, 0);
+            padding: 12px;
+            margin: 1px ;
+        }
+
+        #navbar{
+            grid-area: navbar;
+        }
+
+        #section{
+            
+            grid-area: section;
+        }
+        
+        #corner{
+            grid-area: corner;
+        }
+
+        footer{
+            grid-area: footer;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item" > Lorem i officia ratione ducimus fuga quae veniam dolorem dolore </div>
+
+        <div id="section" class="item" > Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Facilis minima labore psum dolor sit amet consect Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cum esse nam sint aliquam molestias vel qui voluptas cupiditate beatae minima cumque eos est deleniti odit modi harum deserunt optio corrupti, blanditiis magni maxime praesentium. Cupiditate assumenda ea incidunt quisquam tempore quidem quas sunt? Distinctio nulla quos laudantium recusandae, excepturi esse similique asperiores assumenda. Asperiores optio, unde sequi quidem eum ratione repudiandae, eligendi similique quia atque saepe quis, rerum eos dolore pariatur aliquam vero tenetur. Autem delectus nostrum nam placeat, mollitia eum voluptatum expedita consequuntur ex nisi, voluptatem animi. Temporibus minima itaque, amet quidem maxime iste autem fugiat perspiciatis eligendi placeat laudantium alias ipsum,pa temporibus quis fuga facilis dolor exercitationem, libero eum asperiores in facere earum. Commodi temporibus perferendis eaque porro corporis ex, deleniti cupiditate autem veritatis dolorem ut et quia sed hic vel explicabo necessitatibus ipsa qui animi! Facere possimus incidunt dignissimos velit maxime? Eveniet odio iusto aliquam doloremque ipsum odit deleniti repudiandae, fugit, maiores animi officia rem enim minus nisi officiis eum dolorem rerum repellendus praesentium cum ut. Suscipit, animi! Quod blanditiis quis cumque corporis repellat assumenda nesciunt velit alias est dicta, illum ullam perferendis eius quia impedit fugiat.
+            Illo, similique voluptatibus est necessitatibus, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quos voluptate vel nihil ut officia consequatur? Mollitia autem, inventore ad laboriosam cum reprehenderit
+            vitae.voluptatem! adipisicing elit. Vlorem10
+            ero, ratione.
+        </div>
+
+        <div id="corner" class="item" > Lorem ipsum dquia reiciendis. etur, adipisicing elit. Vero, rationequia reiciendis. etur,
+            adipisicing elit. Vero, rationequia reiciendis. etur, adipisicing elit. Vero, rationequia reiciendis. etur,
+            adipisicing elit. Vero, rationeolor sit amet consectetur, adipisicing elit. Vero, ratione.
+        </div>
+
+        <footer class="item" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia!</footer>
+    </div>
+</body>
+
+</html>

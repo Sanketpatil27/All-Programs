@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Positions </title>
+    <style>
+        .container {
+            border: 2px solid grey;
+            height: 3000px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 150px;
+            height: 90px;
+            margin: 3px;
+            border: 2px solid brown;
+        }
+
+        #box3 {
+            /* it moves the box and remove its original space */
+            /* position: absolute; */
+
+            /* it moves and keep its orininal space empty */
+            /* position: relative; */
+
+            /* fixe the element position to the window */
+            /* position: fixed;
+            right: 9px; */
+            
+            /* position: sticky; */
+            top: 3px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"> 1 </div>
+        <div class="box" id="box2"> 2 </div>
+        <div class="box" id="box3"> 3. enter a message </div>
+        <div class="box" id="box4"> 4 </div>
+    </div>
+</body>
+
+</html>

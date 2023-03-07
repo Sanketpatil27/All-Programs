@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation Property</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blueviolet;
+    }   
+
+    .box{
+        color: white;
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(221, 135, 29);
+
+        transform: rotate(45deg);
+        
+        transition: all .3s ease-in-out ;
+    }
+    
+    .box:hover{
+        /* transform: rotate(360deg); */
+        /* transform: skew(-40deg);   tilt */
+        /* transform: scale(-2); getting bigger */
+        /* transform: rotate(60deg); */
+        /* transform: translateX(123px); */
+        /* transform: translateY(123px); */
+         /* transform: translateZ(234px) */
+        transform: translate(123px,127px);
+        transform: translate(123px,127px);
+    }
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="box"> I am the box </div>
+    </div>
+</body>
+
+</html>

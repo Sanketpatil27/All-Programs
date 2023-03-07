@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Float And Clear </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            border: 3px solid #07d1a5;
+            padding: 3px;
+            margin: auto;
+            background-color: #b2b9cc;
+            width: 799px;
+            box-sizing: border-box;
+            margin-top: 20px;
+
+        }
+
+        .item {
+            margin: 13px;
+            background-color: #de8fed;
+            text-align: center;
+            border: 3px solid rgb(5, 252, 128);
+        }
+
+        #fruits {
+            /* margin: auto; */
+            float: right;
+            width: 46%;
+        }
+
+        #computers {
+            clear: both;
+            width: 46%;
+        }
+
+        #unique{
+            color: rgb(234 18 18);
+            margin: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 id="unique"> Welcome To My Store </h3>
+        <div id="fruits" class="item">
+            <h3> Fruits </h3>
+            <p id="fruitspara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic deserunt, aut accusantium
+                voluptate
+                expedita quasi ex, itaque sapiente fugiat assumenda consectetur? Ducimus necessitatibus dicta numquam
+                porro
+                voluptatem velit magni deleniti voluptate cumque aliquid.
+            </p>
+        </div>
+
+        <div id="computers" class="item">
+            <h3> Computers </h3>
+            <p id="computerspara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic deserunt, aut accusantium
+                voluptate
+                expedita quasi ex, itaque sapiente fugiat assumenda consectetur? Ducimus necessitatibus dicta numquam
+                porro
+                voluptatem velit magni deleniti voluptate cumque aliquid.
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3> Stationary </h3>
+            <p id="stationarypara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic deserunt, aut accusantium
+                voluptate
+                expedita quasi ex, itaque sapiente fugiat assumenda consectetur? Ducimus necessitatibus dicta numquam
+                porro
+                voluptatem velit magni deleniti voluptate cumque aliquid.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

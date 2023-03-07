@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Forms </title>
+</head>
+
+<body>
+    <h2> Html Forms </h2>
+    <form action="backend.php">
+        <div>
+            <label for="name"> Name </label>
+            <input type="text" name="MyName" id="name">
+        </div>
+        <br>
+        <div>
+            Role <input type="text">
+        </div>
+        <br>
+        <div>
+            <label for="Email"> Email </label>
+            <input type="email" name="Myname" id="Email">
+        </div>
+        <br>
+        <div>
+            <label for="Date"> Date </label>
+            <input type="date" name="Mydate" id="Date">
+        </div>
+        <br>
+        <div>
+            <label for="Bonus"> Bonus </label>
+            <input type="number" name="Myname" id="Bonus">
+        </div>
+        <br>
+        <div>
+            <label for="Are you elligible"> Are you elligible </label>
+            <input type="checkbox" name="Myname" id="Are you elligible" checked>
+            <input type="checkbox" name="Myname" id="Are you elligible">
+        </div>
+        <br>
+        <div>
+            <label for="Gender"> Male </label>
+            <input type="radio" name="mygender" id="Gender" checked>
+            <label for="Gender1"> Female </label>
+            <input type="radio" name="mygender" id="Gender1">
+            <label for="Gender2"> Other </label>
+            <input type="radio" name="mygender" id="Gender2">
+        </div>
+        <br>
+        <div>
+            <label for="Info"> Write About yourself </label> <br>
+            <textarea name="MyInfo" id="Info" cols="40" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Reset now">
+        </div>
+    </form>
+</body>
+
+</html>

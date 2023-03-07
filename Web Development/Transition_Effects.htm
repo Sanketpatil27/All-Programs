@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition animation</title>
+</head>
+<style>
+
+    body{
+        background-color: black;
+    }
+    
+    .container{
+        height: 600px;
+        width: 1300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+    .item{
+        width: 200px;
+        height: 200px;
+        border: 2px solid rgb(255, 241, 241);
+        background-color: brown;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* transition-property: background-color;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+        transition-delay: 2s; */
+
+        /* short-hand property */
+        /* transition: background-color 2s ease-in-out 2s; */
+
+        /* all means all items will affect with transition */
+        transition: all 1s ease-in-out .3s;
+    }
+
+    .item:hover{
+        background-color: rgb(136, 255, 0);
+        height: 350px;
+        width: 350px;
+        border-radius: 100px;
+        font-size: 36px;
+        color: rgb(253, 0, 0);
+        box-shadow: 9px 9px 10px 3px cyan;
+        text-shadow: 2px 2px 3px  rgb(87, 83, 83);
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">
+            inside code
+        </div>
+    </div>
+</body>
+
+</html>

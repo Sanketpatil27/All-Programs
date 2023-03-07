@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: black;
+            border-radius: 22px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        nav ul li {
+            padding: 11px;
+            margin: 9px;
+            list-style: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        section {
+            margin: 12px 0px;
+            height: 350px;
+            width: 100%;
+            background: url('img/chicken.png') no-repeat center center/cover;
+        }
+
+        .container{
+            display: flex;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: chocolate;
+            margin: 0px 3px;
+            height: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li> garden</li>
+            <li>house</li>
+        </ul>
+    </nav>
+    <section> </section>
+    <div class="container">
+        <div class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore possimus veritatis, quam
+            soluta beatae, officiis totam dolore tenetur, repellat iste facilis. Nobis, at. </div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium similique libero voluptate
+            fuga fugiat quis. Doloremque officiis eum vero suscipit debitis perspiciatis inventore.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem voluptatum
+            pariatur expedita molestiae officiis corporis explicabo enim molestias, incidunt earum qui dolorum?</div>
+    </div>
+</body>
+
+</html>
