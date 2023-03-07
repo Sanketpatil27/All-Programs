@@ -1,0 +1,2 @@
+This2 is writing mode
+ hello hii I am appending
