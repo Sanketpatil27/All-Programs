@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listening</title>
+    <style>
+        #btn {
+            background-color: red;
+            padding: 12px;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1> this is heading </h1>
+        <p id="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laboriosam? Labore, porro.
+            Repellendus qui soluta sit cupiditate commodi. Totam eius modi officia, itaque culpa id. Libero, voluptatum
+            sapiente. Perferendis id consectetur placeat at adipisci, sed tempora sunt accusantium nisi earum iste
+            deserunt omnis. Ipsum aliquid consequatur perferendis, tempora provident, doloremque, illum odit laudantium
+            eligendi ipsa ut? Ullam dicta pariatur perspiciatis eos repellat commodi illo tenetur quam quisquam
+            inventore minus fugit, magnam quas? Tempore nam quae nobis sed dignissimos corporis qui, inventore eum
+            possimus quibusdam, molestiae, quod cumque aliquid modi sunt. Eos mollitia harum assumenda placeat ipsam?
+            Quibusdam labore accusantium doloribus quis ipsam, dignissimos libero voluptatum voluptas molestias ducimus
+            vero ut iure expedita ex cupiditate maxime ipsa voluptatibus. Totam, necessitatibus quibusdam neque, atque
+            tenetur molestiae eos beatae natus nulla animi vero sit eaque sint expedita assumenda incidunt nemo non
+            aliquid velit voluptas recusandae minus, exercitationem quia! Rem repudiandae perferendis ratione,
+            voluptatibus obcaecati excepturi sint repellat itaque tempore. Unde illo beatae voluptates eaque, impedit
+            itaque. Animi, similique fuga consequuntur dicta dignissimos nemo ea. Pariatur incidunt eaque repudiandae
+            deleniti harum quis est? Accusantium necessitatibus quam iure reprehenderit saepe placeat nam omnis tenetur
+            commodi nemo, recusandae in! Nisi id aliquam molestiae delectus ratione sint quia quasi esse tempora
+            debitis? Omnis nemo molestias, quam laboriosam quaerat eos temporibus iure ipsum maiores suscipit rerum vero
+            aliquid, veniam doloribus eaque numquam repellendus tempora enim similique earum, natus minus harum.
+            Dignissimos, unde!</p>
+
+        <button id="btn" onclick="hide()"> show / hide </button>
+    </div>
+
+    <script>
+        // let para = document.getElementById('para');
+        // addEventListener('mouseover', function run() {
+        //     // alert('mouse inside paragraph');
+        //     console.log('mouse inside paragraph')
+        // })
+        
+        // addEventListener('mouseout', function run(){
+        //     // alert('mouse inside paragraph');
+        //     console.log('mouse outside paragraph')
+        // })
+
+        function hide() {
+            let para = document.getElementById('para');
+            let btn = document.getElementById('btn');
+            
+            if(para.style.display != 'none') {
+                para.style.display = 'none';
+                btn.style.backgroundColor = 'blue';
+            }
+            else{
+                para.style.display = 'block';
+                btn.style.backgroundColor = 'red';
+            }
+        }
+
+        let btn = document.getElementById('btn');
+        btn.addEventListener('dblclick',fun);
+
+
+        function fun(e){
+            console.log("its double click");
+        }
+
+        document.querySelector('#container').addEventListener('mousemove',function(e) {
+            console.log(e.offsetX, e.offsetY);
+            document.body.style.backgroundColor = `rgb(${e.offsetY}, ${e.offsetY}, ${e.offsetX})`;
+            console.log("mouse moving");
+        });
+
+    </script>
+</body>
+
+</html>

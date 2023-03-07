@@ -1,0 +1,15 @@
+<html>
+<script type = "text/javascript">
+function getSelected(elem) {
+	//var elem = document.getElementById("sel");                     
+	let str = elem.options[elem.selectedIndex].value;
+	alert("selected language is: " + str);
+}
+</script>
+
+<body>
+<select id = "sel" onchange="getSelected(this)">
+<option> c++ </option>
+<option> python </option>
+<option> java </option>
+</select>

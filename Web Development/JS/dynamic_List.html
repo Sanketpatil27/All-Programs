@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events</title>
+</head>
+<body>
+    <p>
+        <ul id="lst">
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Banana</li>
+        </ul>
+    </p>
+    
+    <button onclick="change()"> Change List </button>
+    Fruits: <input type="radio" id="frt">
+    Cars: <input type="radio" id="cs">
+</body>
+
+<script>
+    function change() {
+        if (condition) {
+            
+        }
+        let ch = "<ul>  <li>Rolls</li>  <li>Bently</li> <li>Banana</li> </ul>"
+        document.getElementById('lst').innerHTML = ch;
+        // let id = document.getElementById('lst');
+        id.addEventListener('click', fun);
+    }
+
+    // function fun() {
+    //         document.getElementById('lst').innerHTML = "hell0";
+    //     }
+
+    //     document.querySelector('#lst').addEventListener('click',function(e) {
+    //         document.write('hello');
+    //         // document.body.style.backgroundColor = `rgb(${e.offsetY}, ${e.offsetY}, ${e.offsetX})`;
+    //         // console.log("mouse moving");
+    //     });
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+
+<body>
+    <h1 id="head"> Welcome to exclusive coding club </h1>
+    <div id="connect">  </div>
+</body>
+
+<script>
+    let age = prompt('Enter You Age: ', 0)
+
+    if (age > 18) {
+        console.log('Welcome you are elligible to join the club..');
+        document.getElementById('head').innerHTML = '<h1> Welcome you are elligible to join the club.. <h1>';
+    }
+    else{
+        console.log('Sorry you cant join club!!');
+        document.getElementById("connect").innerHTML = '<h1> Sorry you cant join the club!! <h1>';
+    }
+
+    alert(`your age is: ${age}`);
+    
+</script>
+</html>

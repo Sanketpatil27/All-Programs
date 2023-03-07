@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Getters And Setters</title>
+    <script>
+        let obj = {
+            defclr : 'red',
+            get clr() {
+                return this.defclr;
+            },
+            set setClr(new_clr) {
+                this.defclr = new_clr;
+            }
+        }
+
+        document.write(obj.defclr + "<br>");
+        document.write(obj.clr + "<br>");
+        obj.setClr = 'green';
+        document.write(obj.clr);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

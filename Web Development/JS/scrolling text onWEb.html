@@ -1,0 +1,23 @@
+<html>
+<head> <title > Hello </title> </head>
+<body onload= "scrollText()">
+<div id="scrollText"></div>
+</body>
+
+<script type="text/javascript">
+    var text = "This is a scrolling text on a webpage";
+    var pos = 0;
+    var el = document.getElementById("scrollText");
+    function scrollText() {
+        el.innerHTML = text.substring(pos, text.length) + text.substring(0, pos);
+        pos++;
+        if (pos > text.length) {
+            pos = 0;
+        }
+        setTimeout("scrollText()", 200);
+    }
+    scrollText();
+</script>
+
+
+</html>

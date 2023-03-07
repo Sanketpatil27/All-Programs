@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mouse Events</title>
+</head>
+<body>
+    
+    <img id="img_ch" onmouseover="img_over()" onmouseout="img_out()" width="300px" src="img/11198889_1569144946680262_1781695830_n.jpg">
+</body>
+</html>
+<script>
+    function img_over()
+    {
+        var size_ch = document.getElementById("img_ch").src = "img/960080_181328532071764_1459844984_n_e1.jpg";
+    }
+    function img_out()
+    {
+        document.getElementById("img_ch").src = "img/11198889_1569144946680262_1781695830_n.jpg";
+    }
+</script>3
+

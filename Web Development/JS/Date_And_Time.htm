@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+
+    <style>
+        h1 {
+            height: 90px;
+            border: 2px solid salmon;
+            text-align: center;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> <span id="time"> </span> </h1>
+</body>
+
+<script>
+    // let dt;
+    // function timedisp() {
+    //     dt = new Date();
+    //     console.log(dt);
+    //     document.getElementById('time').innerHTML = dt;
+    // }
+    // setInterval(timedisp, 1000);
+
+
+    let newDate = new Date("2029-09-30");
+    console.log(newDate);
+
+    // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+    newDate = new Date(3020, 2, 6, 9, 3, 2, 34);
+    console.log(newDate);
+
+    let yr = newDate.getFullYear();
+    console.log('the year is: ', yr);
+
+    let mt = newDate.getMonth();
+    console.log('the month is: ', mt);
+
+    let dy = newDate.getDay();
+    console.log('the day is: ', dy);
+
+    let date = newDate.getDate();
+    console.log('the date is: ', date);
+
+    let ms = newDate.getMilliseconds();
+    console.log('the milliseconds is: ', ms);
+
+
+    newDate.setDate(9);
+    newDate.setHours(9);
+    console.log(newDate);
+
+    function updateTime() {
+        time.innerHTML = new Date();
+    }
+    setInterval(updateTime, 1000);
+</script>
+
+</html>

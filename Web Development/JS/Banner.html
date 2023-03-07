@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+
+<body onload="showBanner()">
+    <center>
+	    <img src="3.jpeg" alt="No Way!!!!" name="changeBanner" height="400px" width="299px">
+    </center>
+    <script>
+        let pics = ['1.jpeg', '2.jpeg', '3.jpeg'];
+        let banner = 0;
+        function showBanner() {
+            if (banner == pics.length) {
+                banner = 0;
+            }
+            document.changeBanner.src = pics[banner];
+            banner++;
+            setTimeout(showBanner, 1000);   // recursion so don't need setInterval
+        }
+    </script>    
+</body>
+</html>

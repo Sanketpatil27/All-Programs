@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form name="myform" action="">
+        <input type="text" name="fnm"> <br> <br>
+        <input type="text" name="snm"> <br> <br>
+        <input type="button" value="Add" onclick="add()">
+        <input type="text" name="result">
+        
+        <input type="button" value="Sub" onclick="sub()">
+    </form>
+</body>
+<script>
+    function add() {
+        let fnm = parseInt(myform.fnm.value);
+        let snm = parseInt(myform.snm.value);
+        let result = fnm + snm;
+        myform.result.value = result;
+    }
+    function sub() {
+        let fnm = parseInt(myform.fnm.value);
+        let snm = parseInt(myform.snm.value);
+        let result = fnm - snm;
+        myform.result.value = result;
+    }
+</script>
+
+</html>

@@ -1,0 +1,22 @@
+<html> 
+<body> 
+
+<button onclick = "setTimeout(disp, 2000)"> Try It </button>   <br>
+<input type= "button" value="click" onclick= "setInterval(disp, 1000)"> 
+
+<p id="date"></p> 
+
+<script>
+	setInterval(myTimer, 1000); 
+	function myTimer() 
+	{   
+		const d = new Date();   
+		document.getElementById("date").innerHTML = d.toLocaleTimeString(); 
+	}
+
+	function disp() {
+		alert("Hello child");
+	}
+</script>
+</body> 
+</html>

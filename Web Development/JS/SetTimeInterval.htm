@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>setTimeOut setTimeInterval </title>
+
+</head>
+
+<body>
+    <h1> hello </h1>
+    <h1>Time is <span id="time"> </span> </h1>
+</body>
+
+<script>
+
+    function greet(name) {
+        console.log("Good Morning " + name);
+    }
+
+    // setTimeout allows us to run the function only once after the interval of time 
+    // clearTimeut allows us to run the function repeatedly after the interval of time 
+
+    // setTimeout(greet, 4000, 'harry');  // time in milisecond(in this 4 seconds)  last is parameter only name of function not parenthisis
+    // timeOut = setTimeout(greet, 4000, 'harry');
+    // console.log(timeOut);
+
+    // clearTimeout(timeOut);      // clear the timeout
+
+    // setInterval(greet, 1000, 'larry');      //runs function after each one second(in this case)
+    // intervalId = setInterval(greet, 1000, 'larry');
+    // console.log(intervalId);
+    // clearInterval(intervalId);
+
+    function displayTime() {
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time ;
+    }
+
+    displayTime();
+    setInterval(displayTime, 1000);
+
+</script>
+
+</html>

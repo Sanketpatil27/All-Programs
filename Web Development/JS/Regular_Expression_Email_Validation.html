@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Email Validation</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <input type="submit" value="check" onclick="check()">
+
+    <script>
+        function check() {
+            let email = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-z])+$/; 
+            let str = txt.value;
+
+            if (email.test(str)) {
+                alert("valid Email-ID");
+            }
+            else {
+                alert("Invalid Email-ID!!!");
+            }
+        }
+    </script>
+</body>
+</html>

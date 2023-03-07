@@ -1,0 +1,22 @@
+<html>
+<body>
+
+Enter Your Password: <input type="password" id = 'pass' />
+<input type="submit" value = 'submit' onclick="check()" />
+
+<script type= "text/javascript">
+
+	function check() {
+		let s = pass.value;
+		let passwd = /helloNew/i;
+		if(s.match(passwd)) {
+			alert("Noice: " + s);
+		}
+		else {
+			alert("Get out of here! " + s);
+		}
+	}
+</script>
+
+</body>
+</html>

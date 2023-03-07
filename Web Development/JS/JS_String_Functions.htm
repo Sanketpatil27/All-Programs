@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+
+<body>
+    <h1> hello </h1>
+</body>
+
+<script>
+    let str = 'iron man';
+    console.log(str);
+    let len = str.length;
+
+    // console.log('uppercase = ' + str.toUpperCase());
+    // console.log('lowercase = ' + str.toLowerCase());
+
+    let str2 = ' trim  trimed  ';
+    // console.log(str2);
+    // console.log(str2.trim());    // remove leading and  traling spaces
+
+    // console.log('element at index 12: ' + str2[12]);
+
+    // // first occurence of a string
+    // console.log('index of im : ' + str2.indexOf('im'));
+
+    // // last occurence of a string
+    // console.log('index of im: ' + str2.lastIndexOf('im'));
+
+    // // substring of string
+    // let sub = str.slice(2, 6);
+    // console.log('substring from str is: '+ sub);
+    // console.log('another substring: '+ str.substring(2,6));
+    // console.log('another substr: '+ str.substr(2,6));
+
+    let str3 = 'This is string';
+    let replace = str3.replace('string', 'harry');
+    console.log(str3);
+    console.log(replace);
+
+    let newstr = str3.concat(' new string');
+    console.log(newstr);
+
+    console.log('character at 3: '+ newstr.charAt(3));
+    console.log('character code at 3: '+ newstr.charCodeAt(3));
+</script>
+
+</html>

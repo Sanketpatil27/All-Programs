@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>home</li>
+            <li>about </li>
+            <li>body</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        about
+    </div>
+</body>
+
+<script>
+    let main = document.getElementById('main');
+    console.log(main);
+
+    let nav = document.getElementById('nav');
+    console.log(nav);
+
+    // nav.innerHTML = '<li> house </li>'       //to change the inner html 
+    // nav.innerHTML                            // to see the items in nav
+
+
+    let containers = document.getElementsByClassName('container');
+    console.log(containers);
+
+    // containers[0]        // to get first container3
+
+    // using selectors, we can use all selectors
+    let sel = document.querySelector('.container');
+    console.log('Selector returns: ', sel);
+
+    let sel1 = document.querySelector('#nav');
+    console.log('Selector returns: ', sel1);
+    
+    let sel3 = document.querySelector('#nav>li');
+    console.log('Selector returns: ', sel3);        // to select first list item
+    
+    let sel4 = document.querySelectorAll('#nav>li');
+    console.log('Selector returns: ', sel4);        // to select All list item
+    // sel4[0].innerHTML = 'inserted'                  // to modify content of first item
+    // sel4[0].innerHTML                                // to view first element
+    
+ </script>
+
+</html>

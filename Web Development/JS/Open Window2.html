@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<input type="button" id = "btn" value= "click" onclick= "showpopup()">
+
+<script>
+function showpopup() { 
+var newWin = window.open("", "_blank",  "height='150', width = '300', top = '10', left='10', resizable = 'yes' menubar= 'yes'");
+
+newWin.document.open();
+newWin.document.write("<html><body> ");
+newWin.document.write("This is new window ");
+newWin.document.write("</body</html>");}
+</script>
+</body>
+</html>

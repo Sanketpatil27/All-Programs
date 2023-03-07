@@ -1,0 +1,26 @@
+<html>
+<script>
+    let pics = ['1.jpeg', '2.jpeg', '3.jpeg'];
+    let count = 0;
+    function slideshow(status) {
+        count = count + status;
+        if (count == (pics.length)) {
+            count = 0;
+        }
+        if (count < 0) {
+            count = pics.length - 1;
+        }
+        document.img1.src = pics[count];
+    }
+</script>
+
+
+<body>
+    <center>
+        <img src="1.jpeg" height="400px" width="299px" name="img1"> <br> <br>
+        <input type="button" name="Back" value="Back" onclick="slideshow(-1)">
+        <input type="button" name="Next" value="Next" onclick="slideshow(1)">
+    </center>
+</body>
+
+</html>

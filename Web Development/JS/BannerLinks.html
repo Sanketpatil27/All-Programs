@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script>
+        let MyBanners = ['2.jpeg', '3.jpeg'];
+        let MyBannerLinks = ['http://www.google.com/', 'http://www.abc.xyz/'];
+        let banner = 0;
+
+        function ShowLinks() {
+            document.location.href = MyBannerLinks[banner];
+        }
+
+        function ShowBanners() {
+            if (banner == MyBanners.length) {
+                banner = 0;
+            }
+            document.ChangeBanner.src = MyBanners[banner];
+            setTimeout("ShowBanners()", 1500);
+            banner++;
+        } 
+    </script>
+</head>
+
+<body onload="ShowBanners()">
+    <center>
+        <a href="javascript: ShowLinks()">
+            <img src="" width="290" height="420" name="ChangeBanner" />
+        </a>
+    </center>
+</body>
+
+</html>

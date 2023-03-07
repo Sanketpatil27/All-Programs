@@ -1,0 +1,32 @@
+<html>
+  <script>
+    function updateList(ElementValue) {
+      let optionList = document.getElementById("optionList");
+
+        if (ElementValue == 1) {
+          optionList[0].text = "Mango";
+          optionList[1].text = "Banana";
+          optionList[2].text = "Apple";
+        }
+        else if (ElementValue == 2) {
+          optionList[0].text = "Potato";
+          optionList[1].text = "Cabbage";
+          optionList[2].text = "Onion";
+        }
+    }            
+  </script>
+
+<body>
+    <p>
+      <select id="optionList" size="3">
+        <option> Mango
+        <option> Banana
+        <option> Apple
+      </select> <br>
+
+      <input type="radio" name="grp1" value=1 onclick="updateList(this.value)"> Fruits
+      <input type="radio" name="grp1" value=2 onclick="updateList(this.value)"> Vegetables <br>
+      <input type="reset" value="Reset" name="reset">
+    </p>
+</body>
+</html>
