@@ -1,2 +1,2 @@
 # All-Programs
-This repo contains my all programs
+This repo contains my all language specific programs
